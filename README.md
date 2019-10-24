@@ -1,5 +1,6 @@
-####Simple database program in Maven
-###The program will have user and admin side
+#Simple database program in Maven
+
+The program will have user and admin side.
 
 [![Build Status](https://travis-ci.org/HuserB8927/Database.svg?branch=master)](https://travis-ci.org/HuserB8927/Database)
 
