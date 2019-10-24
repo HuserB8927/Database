@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="DatabasePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>hu.benjaminhalasz.model.Person</class>
+    <class>hu.benjaminhalasz.model.Application</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/visa?serverTimezone=UTC#"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="12345678"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="visa?autoReconnect=true&amp;serverTimezone=UTC&amp;useSSL=False&amp;allowPublicKeyRetrieval=truePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>hu.benjaminhalasz.model.Person</class>
+    <class>hu.benjaminhalasz.model.Application</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/visa?autoReconnect=true&amp;serverTimezone=UTC&amp;useSSL=False&amp;allowPublicKeyRetrieval=true"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="12345678"/>
+    </properties>
+  </persistence-unit>
+</persistence>
