@@ -1,4 +1,5 @@
 ####Simple database program in Maven
+###The program will have user and admin side
 
 - Database program uses MySQL
 - The program has User and Admin side
